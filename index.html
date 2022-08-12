@@ -91,7 +91,7 @@
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	
-				    <li><a href="/categories/笔记整理/" class="animsition-link">笔记整理<small>(1)</small></a></li>
+				    <li><a href="/categories/笔记整理/" class="animsition-link">笔记整理<small>(2)</small></a></li>
 				    
 				    <li><a href="/categories/软件相关/" class="animsition-link">软件相关<small>(1)</small></a></li>
 				    
@@ -212,6 +212,46 @@
 
 <section id="intro">
     <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2022/08/12/笔记整理/C++模板特化/">C++模板特化</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2022-08-12T09:45:20.000Z" itemprop="datePublished">
+          2022-08-12
+      </time>
+    
+    
+    | 
+    <a href='/tags/C/'>C++</a>,
+    
+    <a href='/tags/笔记整理/'>笔记整理</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1. 模板的局限性假设有如下模板函数：
+123template &lt;class T&gt;	// or template &lt;typename T&gt;void f(T a, T b)&#123;...&#125;
+
+通常，代码假定可执行哪些操作，但对于一些类型该操作可能不成立。比如操作是赋值，而T是数组，或者操作是比较，而T是结构等等。对于这些情况，除了可以重载运算符外，另一种解决方案则是为特定类型提供具体化（即特化）的模板
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2022/08/12/笔记整理/C++模板特化/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
