@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********  Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>C#知识点总结 | Hexo</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Hexo">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/笔记整理/" class="animsition-link">笔记整理<small>(8)</small></a></li>
+				    
+				    <li><a href="/categories/软件相关/" class="animsition-link">软件相关<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a target="_blank" rel="noopener" href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a target="_blank" rel="noopener" href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Hexo</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2022-08-18T07:49:02.000Z" itemprop="datePublished">
+          2022-08-18
+      </time>
+    
+    
+    | 
+    <a href='/tags/笔记整理/'>笔记整理</a>,
+    
+    <a href='/tags/知识点总结/'>知识点总结</a>,
+    
+    <a href='/tags/C-Sharp/'>C Sharp</a>
+    
+    
+</span>
+                <h1>C#知识点总结</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h2 id="1-值类型与引用类型"><a href="#1-值类型与引用类型" class="headerlink" title="1. 值类型与引用类型"></a>1. 值类型与引用类型</h2><p>（1）值类型：bool, int, float, enum, struct…<br>（2）引用类型：string, object, class, delegate, interface…</p>
+<h3 id="string"><a href="#string" class="headerlink" title="string"></a>string</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> str1 = <span class="string">&quot;hello&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>这是一个值类型的赋值，但string是一个引用类型，string被分配在堆上，而不是栈上。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> str2 = str1;</span><br></pre></td></tr></table></figure>
+<p>因此，当把一个字符串变量赋给另一个字符串变量时，会得到对内存中同一个字符串的两个引用。但是，string与其他引用类型在常见的操作上有一些区别。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">&quot;world&quot;</span>;</span><br></pre></td></tr></table></figure>
+<p>例如字符串是不可改变的。修改其中一个字符串变量，就会创建一个全新的string对象，而另一个字符串变量不会发生任何变化。这实际上是运算符重载的结果。</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>数组是引用类型，属于引用传递，用数组赋值新数组并不会产生新的副本。要想创建一个新的副本，使两个数组的数据互不干扰，需要用到Clone, CopyTo, 遍历数组赋值等方法。</p>
+<h2 id="2-装箱与拆箱"><a href="#2-装箱与拆箱" class="headerlink" title="2. 装箱与拆箱"></a>2. 装箱与拆箱</h2><p>（1）装箱：将值类型转换为object类型或由此值类型实现的任何接口类型的过程。（把值类型转换成引用类型）</p>
+<ul>
+<li>装箱是隐式的。<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> i = <span class="number">123</span>;</span><br><span class="line"><span class="built_in">object</span> o = i;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>（2）拆箱：从对象中提取值类型。（把引用类型转换成值类型）</p>
+<ul>
+<li>拆箱是显示的。<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">object</span> o = <span class="number">123</span>;</span><br><span class="line"><span class="built_in">int</span> i = (<span class="built_in">int</span>)o;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="3-垃圾回收（GC）"><a href="#3-垃圾回收（GC）" class="headerlink" title="3. 垃圾回收（GC）"></a>3. 垃圾回收（GC）</h2><p>（1）C#的GC只回收托管堆上的托管资源。</p>
+<ul>
+<li>非托管资源：stream（文件），connection（数据库连接），COM（组件）…</li>
+<li>非托管资源需要手动进行释放。</li>
+</ul>
+<p>（2）GC步骤：</p>
+<ol>
+<li><p>标记（Mark）：从Root开始进行引用标记，未被标记到的为不可达内存，不可达内存为GC对象。</p>
+</li>
+<li><p>重新分配地址（Relocate）：更新所有活动对象列表中的所有对象的引用，以便它们指向对象将在压缩阶段重定位到的新位置。</p>
+</li>
+<li><p>压缩（Compact）：当部分内存被清除后，原本的内存空间变得不连续，因此剩余的存活对象需要按照原始顺序从基址开始重新排列。</p>
+</li>
+</ol>
+<p>（3）非托管资源的释放：</p>
+<ol>
+<li><p>终结器（以前称为析构函数）</p>
+<ul>
+<li>对象被GC回收之前被调用。</li>
+<li>无法在结构中定义终结器。 它们仅用于类。</li>
+<li>一个类只能有一个终结器。</li>
+<li>不能继承或重载终结器。</li>
+<li>不能手动调用终结器。</li>
+<li>会隐式调用对象基类上的Finalize方法，C# 编译器不允许重写该方法 Finalize。 </li>
+<li>不应使用空终结器。 如果类包含终结器，会在Finalize队列中创建一个条目。 此队列由垃圾回收器处理。 当GC处理队列时，它会调用每个终结器。 不必要的终结器（包括空的终结器、仅调用基类终结器的终结器，或者仅调用条件性发出的方法的终结器）会导致不必要的性能损失。</li>
+<li>GC运行时机不确定，可能导致非托管资源释放不及时。</li>
+<li>GC.SuppressFinalize(object)： 不调用对象的终结器。</li>
+</ul>
+</li>
+<li><p>继承IDisposable接口，实现Dispose方法</p>
+</li>
+<li><p>using关键字</p>
+</li>
+</ol>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> (FileStream f = <span class="keyword">new</span> FileStream(<span class="string">&quot;...&quot;</span>))</span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>The lifetime of a using local will extend to the end of the scope in which it is declared. The using locals will then be disposed in the reverse order in which they are declared.</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">using</span> <span class="keyword">var</span> f1 = <span class="keyword">new</span> FileStream(<span class="string">&quot;...&quot;</span>);</span><br><span class="line">    <span class="keyword">using</span> <span class="keyword">var</span> f2 = <span class="keyword">new</span> FileStream(<span class="string">&quot;...&quot;</span>);</span><br><span class="line">    ...</span><br><span class="line">    <span class="comment">// Dispose f2</span></span><br><span class="line">    <span class="comment">// Dispose f1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-公共语言运行时（Common-Language-Runtime）"><a href="#4-公共语言运行时（Common-Language-Runtime）" class="headerlink" title="4. 公共语言运行时（Common Language Runtime）"></a>4. 公共语言运行时（Common Language Runtime）</h2><p>（1）CLR是微软为他们的.Net虚拟机所选用的名称，为微软的.Net产品提供运行环境。</p>
+<p>（2）CLR上实际运行的并不是我们通常所用的编程语言，而是一种成为“通用中间语言”的字节码。这意味着只要能将代码编译成这种特定的“中间语言”，任何语言的产品都能运行在CLR上。</p>
+<p>（3）.Net Framework是一个支持多种开发语言的开发平台，而这种多语言支持的特性以CLR为基础。CLR是一个.Net产品的运行环境。</p>
+<p>（4）CLR的核心功能：内存管理，程序集加载，安全性，异常处理，线程同步等。</p>
+<h2 id="5-静态构造函数"><a href="#5-静态构造函数" class="headerlink" title="5. 静态构造函数"></a>5. 静态构造函数</h2><p>（1）静态构造函数用于初始化任何静态数据，或执行仅需执行一次的特定操作。 将在创建第一个实例或引用任何静态成员之前自动调用静态构造函数。</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">Test</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">string</span> x = <span class="string">&quot;a&quot;</span>;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Test</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        x = <span class="string">&quot;b&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（2）执行顺序：静态变量 &gt; 静态构造函数 &gt; 实例变量 &gt; 实例构造函数</p>
+<h2 id="6-抽象类（abstract-class）与接口（interface）"><a href="#6-抽象类（abstract-class）与接口（interface）" class="headerlink" title="6. 抽象类（abstract class）与接口（interface）"></a>6. 抽象类（abstract class）与接口（interface）</h2><p>（1）相同点：</p>
+<ol>
+<li>都可以被继承</li>
+<li>都不能被实例化</li>
+<li>都可以包含方法的声明</li>
+</ol>
+<p>（2）不同点：</p>
+<ol>
+<li>抽象类只能被单个类继承；接口可继承接口，并可多继承接口。</li>
+<li>抽象基类可以定义字段、属性、方法实现；接口只能定义属性、索引器、事件、和方法声明，不能包含字段。<br> <em>字段：private int a &#x3D; 0;</em><br> <em>属性：public int A {get;set;}</em></li>
+<li>具体派生类必须覆盖（override）抽象基类的抽象方法；派生类必须实现接口的所有方法（没有override关键字）。</li>
+<li>抽象类中的虚方法或抽象方法必须用public修饰；接口中的所有成员默认为public，不能有private修饰符。</li>
+</ol>
+<h2 id="7-类（class）与结构体（struct）"><a href="#7-类（class）与结构体（struct）" class="headerlink" title="7. 类（class）与结构体（struct）"></a>7. 类（class）与结构体（struct）</h2><p>（1）类：</p>
+<ol>
+<li>class属于引用类型，是分配在内存的堆上的。</li>
+</ol>
+<p>（2）结构体：</p>
+<ol>
+<li>struct属于值类型，是分配在内存的栈上的。</li>
+<li>不能从另外一个结构或者类继承，本身也不能被继承。（但是结构体可以实现一个或多个接口）</li>
+<li>没有默认的构造函数，但是可以添加构造函数。</li>
+<li>结构体中声明的字段无法赋予初始值。</li>
+<li>可以不使用new初始化。这样必须初始化结构体内部所有的字段，否则在此之前字段都保持未赋值状态，且对象不可用。（就算使用new初始化，也是在栈上为其分配空间。）</li>
+</ol>
+<h2 id="8-委托（delegate）与事件（event）"><a href="#8-委托（delegate）与事件（event）" class="headerlink" title="8. 委托（delegate）与事件（event）"></a>8. 委托（delegate）与事件（event）</h2><p>（1）委托：把一个方法作为参数传入另一个方法，本质上就是一个类，用来定义参数的类型。</p>
+<ul>
+<li>使用委托也可以将多个方法绑定到同一个委托变量，当调用此变量时可以依次调用所有绑定的方法。</li>
+<li>public delegate void DelegateTypeName(Object paramName);</li>
+</ul>
+<p>（2）事件：对委托类型变量的封装，类似于属性对字段的封装，目的是允许外部对委托变量进行注册的同时，避免外部对它进行随意的赋值等操作，保护对象的封装性。</p>
+<ul>
+<li>在类的内部，无论将事件变量声明成public还是protected，它本身总是private的（避免外部修改）。在外部对其进行注册（+&#x3D;）和注销（-&#x3D;）操作的访问限定符与事件变量声明时使用的访问符相同。</li>
+<li>public event DelegateTypeName EventName;</li>
+<li>注册方法：<ol>
+<li>aaa.EventName +&#x3D; bbb.funcB;  </li>
+<li>aaa.EventName +&#x3D; (new B()).funcB;   &#x2F;&#x2F;用匿名对象注册</li>
+<li>aaa.EventName +&#x3D; new A.DelegateTypeName(bbb.funcB);</li>
+<li>aaa.EventName +&#x3D; C.FuncC;   &#x2F;&#x2F;注册静态方法</li>
+</ol>
+</li>
+</ul>
+<h2 id="9-try-catch-finally-return"><a href="#9-try-catch-finally-return" class="headerlink" title="9. try, catch, finally, return"></a>9. try, catch, finally, return</h2><p>（1）无论如何，finally一定会执行。即使程序有异常，并且在catch中throw了，或者try&#x2F;catch中有return，finally还是都会被执行。</p>
+<p>（2）finally是在return后面的表达式运算完之后执行的。</p>
+<p>（3）如果在finally中对返回值就行了重新赋值：</p>
+<ol>
+<li>如果返回值是值类型，返回的值不受影响，即在try&#x2F;catch时返回的值就已经确定了。（包括string类型，虽然是引用类型，这是特殊的个例）</li>
+<li>如果返回值是引用类型，则会影响到返回值（e.g. 数组）。</li>
+</ol>
+<p>（4）finally中不能有return，编译无法通过。</p>
+<h2 id="10-值传递与引用传递"><a href="#10-值传递与引用传递" class="headerlink" title="10. 值传递与引用传递"></a>10. 值传递与引用传递</h2><p>（1）值传递不是指参数是值类型，而是指形参变量会复制实参变量，也就是会在栈上多创建一个相同的变量。而按引用传递则不会。</p>
+<p>（2）ref关键字：</p>
+<ol>
+<li>ref修饰参数：指示参数按引用传递。如果方法内部修改了参数，则会影响到方法外部。<ul>
+<li>传递到ref或in形参的实参必须先经过初始化，然后才能传递。</li>
+<li>ref, in或out不会影响方法重载。即如果方法签名仅ref, in或out不同，则不会通过编译。</li>
+</ul>
+</li>
+<li>ref修饰返回值：“引用返回”，即让方法按引用向调用方返回，调用方可以修改返回的值。<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">ref</span> <span class="built_in">int</span> <span class="title">GetElement</span>(<span class="params"><span class="built_in">int</span>[] arr</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">ref</span> arr[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span>[] arr = <span class="keyword">new</span> <span class="built_in">int</span>[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">ref</span> <span class="built_in">int</span> element = <span class="function"><span class="keyword">ref</span> <span class="title">GetElement</span>(<span class="params">arr</span>)</span>;</span><br><span class="line">element = <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在签名中要用ref来标记返回值，在实现中的return语句中也要使用ref来标记返回值。</li>
+</ul>
+</li>
+<li>ref修饰局部变量：用来指向return ref返回的值。<ul>
+<li>无法将ref局部变量初始化为非ref返回值。</li>
+</ul>
+</li>
+<li>ref修饰struct：告诉编译器它所修饰的struct只能被严格限制在栈上，不能通过任何方式放到堆上。（struct的装箱可能发生在例如将struct对象赋值&#x2F;转换为一个object时）<ul>
+<li>ref struct的意义之一是用来实现Span<T></li>
+<li>Span<T>的定义就是一个ref struct，是一种允许表示任意内存的连续区域的值类型。（托管内存，非托管内存和栈内存都可以封装到Span中并安全地访问）</li>
+</ul>
+</li>
+</ol>
+<p>（3）in关键字：按引用传递参数，但是以只读的方式传递参数（确保参数在方法内不会被修改），否则编译器报错。</p>
+<p>（4）out关键字：按引用传递参数，但是out限制参数在离开方法前必须进行赋值，否则编译器报错。</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2022/08/18/%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/WPF%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" style="float: left;">
+        ← WPF知识点总结
+    </a>
+    
+    
+    <a class="pull-right" href="/2022/08/17/%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/Windows%E5%BC%80%E5%8F%91%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+        Windows开发总结 →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
+                </p>
+                <p>Theme By <a target="_blank" rel="noopener" href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
